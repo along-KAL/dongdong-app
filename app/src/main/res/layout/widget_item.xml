@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+    <TextView
+        android:id="@+id/widget_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="我的体重"/>
+
+    <ImageView
+        android:id="@+id/widget_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@mipmap/more_h"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/widget_title"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/font_unhight"/>
+
+    <TextView
+        android:id="@+id/widget_current_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/line"
+        android:layout_marginTop="10dp"
+        android:text="当前体重"/>
+
+    <TextView
+        android:id="@+id/widget_wid_numb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widget_current_widget"
+        android:textColor="@color/font_checked"
+        android:textSize="30sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="65.0"/>
+
+    <TextView
+        android:id="@+id/widget_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/widget_wid_numb"
+        android:layout_alignBottom="@id/widget_wid_numb"
+        android:text="kg"/>
+
+    <ImageView
+        android:id="@+id/widget_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/widget_kg"
+        android:src="@mipmap/left_dong"/>
+
+        <Button
+            android:id="@+id/widget_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+            android:visibility="visible"
+        android:background="@color/colorOrange"
+        android:textColor="@color/colorWright"
+        android:layout_toRightOf="@id/widget_left"
+        android:layout_alignTop="@id/widget_left"
+        android:textAllCaps="false"
+        android:text="+6.0kg"/>
+
+        <Button
+            android:id="@+id/widget_bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:background="@color/colorOrange"
+            android:textColor="@color/colorWright"
+            android:layout_toRightOf="@id/widget_left"
+            android:layout_alignTop="@id/widget_left"
+            android:textAllCaps="false"
+            android:text="+7.0kg"/>
+
+        <Button
+            android:id="@+id/widget_bt3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:background="@color/colorOrange"
+            android:textColor="@color/colorWright"
+            android:layout_toRightOf="@id/widget_left"
+            android:layout_alignTop="@id/widget_left"
+            android:textAllCaps="false"
+            android:text="+8.0kg"/>
+
+        <TextView
+            android:id="@+id/widget_text_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/widget_left"
+            android:layout_alignLeft="@id/widget_bt"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="5dp"
+            android:text="上次录入"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/widget_bt"
+            android:scaleY="0.7"
+            android:scaleX="0.7"
+            android:layout_alignBottom="@id/widget_bt"
+            android:src="@mipmap/right_dong"/>
+
+        <TextView
+            android:id="@+id/widget_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/widget_wid_numb"
+            android:textColor="@color/font_unchecked"
+            android:text="BMI"/>
+
+        <TextView
+            android:id="@+id/widget_bmi_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/widget_bmi"
+            android:layout_alignBottom="@id/widget_bmi"
+            android:layout_marginLeft="5dp"
+            android:text="21.7"/>
+
+        <ImageView
+            android:id="@+id/widget_bmi_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.8"
+            android:scaleY="0.6"
+            android:layout_toRightOf="@id/widget_bmi_num"
+            android:layout_alignTop="@id/widget_bmi_num"
+            android:layout_marginTop="-10dp"
+            android:src="@mipmap/up_dong"/>
+
+        <TextView
+            android:id="@+id/widget_up_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/widget_bmi_up"
+            android:layout_alignBottom="@id/widget_bmi_up"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorOrange"
+            android:text="+2.0"/>
+
+        <com.example.group.dongdong.widget.customs.WidgetView
+            android:id="@+id/widget_customView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/widget_bmi_num"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

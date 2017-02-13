@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.group.teamproject2">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <uses-feature android:name="android.hardware.sensor.accelerometer"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+     
+    <application
+        android:name="com.example.group.dongdong.activitys.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f7fe4142dfb80b26370806f0ebb03298">
+        </meta-data>
+
+        <activity android:name="com.example.group.dongdong.activitys.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.amap.api.location.APSService">
+        </service>
+        <service
+            android:name="com.example.group.dongdong.services.StepService"
+            android:priority="1000"
+            android:process="com.example.group.teamproject2.step">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_TIME_TICK"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+
+                <uses-permission android:name="android.permission.INTERNET"/>
+                <!-- 允许程序设置内置sd卡的写权限 -->
+                <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+                <!-- 允许程序获取网络状态 -->
+                <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+                <!-- 允许程序访问WiFi网络信息 -->
+                <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+                <!-- 允许程序读写手机状态和身份 -->
+                <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+                <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+                <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.example.group.dongdong.services.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.example.group.dongdong.module.sports.activitys.TrainPlanActivity">
+        </activity>
+        <activity android:name="com.example.group.dongdong.module.sports.activitys.GPSSportsActivity">
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="1105870165"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.example.group.dongdong.activitys.RecordeActivity">
+        </activity>
+
+        <!-- <activity -->
+        <!-- android:name="com.alipay.sdk.app.H5PayActivity" -->
+        <!-- android:configChanges="orientation|keyboardHidden|navigation" -->
+        <!-- android:exported="false" -->
+        <!-- android:screenOrientation="behind" > -->
+        <!-- </activity> -->
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind">
+        </activity>
+        <activity android:name="com.alipay.sdk.pay.demo.PayDemoActivity">
+        </activity>
+        <activity android:name="com.alipay.sdk.pay.demo.H5PayDemoActivity"/>
+        <activity android:name="com.example.group.dongdong.activitys.ShowActivity">
+        </activity>
+    </application>
+
+</manifest>

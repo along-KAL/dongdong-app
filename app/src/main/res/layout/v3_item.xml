@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/page_v3_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="洞察"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/font_checked"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:text="更多"/>
+
+    <View
+        android:id="@+id/page_v3_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/page_v3_title"
+        android:background="@color/font_unchecked"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page_v3_line"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/me_weight_insights_tree"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/page_v3_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_checked"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:text="7"/>
+
+            <TextView
+                android:id="@+id/page_v3_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignBottom="@id/page_v3_number"
+                android:layout_alignParentRight="true"
+                android:text="%"/>
+
+
+
+           <TextView
+               android:id="@+id/t"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/page_v3_number"
+               android:text="你的平均活动量，已经超过了"/>
+
+            <TextView
+                android:id="@+id/page_v3_textShowInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-16dp"
+                android:text="7%的用户"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

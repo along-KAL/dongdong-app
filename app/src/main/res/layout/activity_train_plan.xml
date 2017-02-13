@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_train_plan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.group.teamproject2.com.example.group.dongdong.module.sports.activitys.TrainPlanActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        ></android.support.v7.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#daf9f7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:text="第1周 第1天"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2"
+            android:layout_margin="10dp"
+            android:text="开始训练，慢跑1分钟+步行两分钟，重复8次。"/>
+
+
+
+    </LinearLayout>
+
+    <com.example.group.dongdong.widget.SportsTrainPlanScheduleView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="10dp"
+        android:id="@+id/sportsTrainPlanScheduleView"
+        >
+    </com.example.group.dongdong.widget.SportsTrainPlanScheduleView>
+
+    <com.example.group.dongdong.widget.CustomViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/trainpaln_viewpager"
+        android:layout_marginTop="5dp"
+        android:layout_weight="6">
+
+    </com.example.group.dongdong.widget.CustomViewPager>
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:id="@+id/trainplan_begin_image"
+        android:src="@mipmap/icon_start_btn_round_blue"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:text="结束训练"
+        android:id="@+id/trainplan_end_btn"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/relativeLayout"
+        android:layout_weight="2">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重置"/>
+        </FrameLayout>
+
+
+        <com.example.group.dongdong.widget.SportsTrainPlanChoseView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/SportsTrainPlanChoseView"
+            >
+        </com.example.group.dongdong.widget.SportsTrainPlanChoseView>
+
+    </RelativeLayout>
+
+</LinearLayout>

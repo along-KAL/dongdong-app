@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorOrange">#fa8c05</color>
+    <color name="colorWright">#fff</color>
+
+    <color name="font_checked">#2f8af1</color>
+    <color name="font_alphachecked">#6885e5fa</color>
+    <color name="font_green">#01e737</color>
+    <color name="font_checkedlow">#bed0e4</color>
+    <color name="font_unchecked">#c2bebf</color>
+    <color name="font_unhight">#7c7879</color>
+</resources>

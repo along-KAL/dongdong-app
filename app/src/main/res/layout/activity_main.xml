@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    ></android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+    </FrameLayout>
+
+
+    <RadioGroup
+        android:layout_gravity="bottom"
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:background="#ffff">
+        <RadioButton
+            android:id="@+id/my_radio_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/my_selector"
+            android:textColor="@drawable/font_selector"
+            android:button="@null"
+            android:text="我"
+            android:gravity="center_horizontal"
+            />
+        <RadioButton
+            android:id="@+id/analyze_radio_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/analyze_selector"
+            android:textColor="@drawable/font_selector"
+            android:button="@null"
+            android:text="分析"
+            android:gravity="center_horizontal"
+            />
+        <RadioButton
+            android:id="@+id/sports_radio_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/sports_selector"
+            android:textColor="@drawable/font_selector"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            />
+        <RadioButton
+            android:id="@+id/target_radio_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/target_selector"
+            android:textColor="@drawable/font_selector"
+            android:button="@null"
+            android:text="目标"
+            android:gravity="center_horizontal"
+            />
+        <RadioButton
+            android:id="@+id/group_radio_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/group_selector"
+            android:textColor="@drawable/font_selector"
+            android:button="@null"
+            android:text="群组"
+            android:gravity="center_horizontal"
+            />
+
+    </RadioGroup>
+
+
+
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sports_selector"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        />-->
+
+</LinearLayout>

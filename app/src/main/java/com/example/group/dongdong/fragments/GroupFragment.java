@@ -1,0 +1,40 @@
+package com.example.group.dongdong.fragments;
+
+
+import android.support.v4.app.Fragment;
+import android.view.View;
+
+import com.example.group.dongdong.commom.BaseFragment;
+import com.example.group.teamproject2.R;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class GroupFragment extends BaseFragment {
+
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.fragment_group;
+    }
+
+    @Override
+    protected void initView(View ret) {
+
+    }
+
+    @Override
+    protected void initEvent() {
+
+    }
+
+    @Override
+    protected void initData() {
+
+    }
+
+    @Override
+    protected void initAdapter() {
+
+    }
+}

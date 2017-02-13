@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+   <TextView
+       android:id="@+id/page_v1_title"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="15sp"
+       android:textStyle="bold"
+       android:text="单日最多步数"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_checked"
+        android:layout_alignParentRight="true"
+        android:text="更多"/>
+
+    <View
+        android:id="@+id/page_v1_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/page_v1_title"
+        android:background="@color/font_unchecked"/>
+
+    <TextView
+        android:id="@+id/page_v1_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page_v1_line"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/font_unchecked"
+        android:text="2016年12月30日"/>
+
+    <TextView
+        android:id="@+id/page_v1_numb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="@color/font_checked"
+        android:layout_below="@id/page_v1_time"
+        android:layout_marginTop="20dp"
+        android:text="1,288"/>
+
+    <com.example.group.dongdong.widget.customs.PageV1
+        android:id="@+id/page_V1_curtomView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/page_v1_numb"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

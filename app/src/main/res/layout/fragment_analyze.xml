@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.group.dongdong.fragments.AnalyzeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/analyze_tableyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/analyze_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/analyze_tableyLayout">
+    </android.support.v4.view.ViewPager>
+
+    <com.example.group.dongdong.widget.customs.CustomIndicator
+        android:id="@+id/analyze_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleY="0.5"
+        android:scaleX="0.5"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>

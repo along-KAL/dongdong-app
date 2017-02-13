@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/page_v4_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:text="本周活动量"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/font_checked"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:text="更多"/>
+
+    <View
+        android:id="@+id/page_v4_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/page_v4_title"
+        android:background="@color/font_unchecked"/>
+
+    <ImageView
+        android:id="@+id/v4_run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page_v4_line"
+        android:scaleY="0.7"
+        android:scaleX="0.7"
+        android:layout_marginTop="6dp"
+        android:src="@mipmap/me_badge_1"/>
+
+    <TextView
+        android:id="@+id/page_v4_numb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/v4_run"
+        android:layout_alignBottom="@id/v4_run"
+        android:textSize="45sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/font_checked"
+        android:text="84"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/page_v4_numb"
+        android:layout_alignBottom="@id/page_v4_numb"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="大卡"/>
+
+    <com.example.group.dongdong.widget.customs.PageV4
+        android:id="@+id/v4_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v4_run"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

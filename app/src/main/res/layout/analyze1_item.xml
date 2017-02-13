@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/analyze_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="平均"/>
+
+            <TextView
+                android:id="@+id/analyze_table1_everNumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_checked"
+                android:textSize="35sp"
+                android:text="1043"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="总计"/>
+
+            <TextView
+                android:id="@+id/analyze_table1_allNumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_checked"
+                android:textSize="35sp"
+                android:text="7294"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.example.group.dongdong.widget.customs.PaceTableV1
+        android:id="@+id/analyze1_custom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/analyze_layout"/>
+
+    <ImageView
+        android:id="@+id/analyze_rotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/analyze_layout"
+        android:layout_alignParentRight="true"
+        android:scaleY="0.6"
+        android:scaleX="0.6"
+        android:layout_margin="20dp"
+        android:src="@mipmap/trend_double_arrow_expand"/>
+
+
+</RelativeLayout>

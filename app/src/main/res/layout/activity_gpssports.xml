@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gpssports"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.group.teamproject2.com.example.group.dongdong.module.sports.activitys.GPSSportsActivity">
+
+
+
+    <com.amap.api.maps.MapView
+
+        android:id="@+id/map"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"/>
+
+
+    <com.example.group.dongdong.widget.SportsGPSLayoutView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gps_SportsGPSLayoutView"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="90sp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="#28b4f5"
+                android:textStyle="bold"
+                android:id="@+id/gps_distance_text"
+                android:text="00.00"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:layout_gravity="center"
+                android:textColor="#28b4f5"
+                android:text="Km"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:id="@+id/gps_time_text"
+                android:text="00:00:00"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gps_hot_text"
+                    android:text="大卡 1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gps_speed_text"
+                    android:text="2分钟/km"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gps_step_text"
+                    android:text="步数 2"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_start_btn_round_blue"/>
+        </LinearLayout>
+
+
+    </com.example.group.dongdong.widget.SportsGPSLayoutView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gps_linearlayout"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="返回"
+            android:id="@+id/gps_swap_btn"/>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="定位"
+            android:id="@+id/gps_location_btn"/>
+    </LinearLayout>
+
+</RelativeLayout>

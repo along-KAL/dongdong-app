@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:background="#ffeeeeee"
+            >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <com.example.group.dongdong.widget.SportsTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/sportsStepText1"
+            android:background="#0000ffff"
+            />
+
+        <com.example.group.dongdong.widget.SportsTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/sportsStepText2"
+            android:background="#0000ffff"
+           />
+
+        <com.example.group.dongdong.widget.SportsTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/sportsStepText3"
+            android:background="#0000ffff"
+            />
+    </LinearLayout>
+
+<android.support.v4.view.ViewPager
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:id="@+id/sports_viewpager"
+    android:layout_weight="2">
+
+</android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <com.example.group.dongdong.widget.SportsDiagramView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                         android:orientation="vertical"
+                                                         android:layout_width="match_parent"
+                                                         android:layout_height="match_parent"
+                                                         android:id="@+id/diagram_view">
+
+    </com.example.group.dongdong.widget.SportsDiagramView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:alpha="0"
+            android:orientation="vertical"
+            android:id="@+id/kilometres_layout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GPS总公里数"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:id="@+id/today_kilometres_text"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textSize="25sp"
+                android:textColor="#46c3e6"
+                android:id="@+id/today_kilometres_count_text"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0次运动"
+                android:textSize="15sp"
+                android:textColor="#c1bebe"
+                android:id="@+id/today_count_sports"></TextView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:alpha="0"
+            android:orientation="vertical"
+            android:id="@+id/hot_layout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第一周 第一天"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:id="@+id/today_hot_text"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#cac7c7"
+                android:textSize="10sp"
+                android:text="运动类型"
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fd7d21"
+                android:text="有氧训练"
+                android:textSize="10sp"
+                android:textColor="#fff"
+                ></TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

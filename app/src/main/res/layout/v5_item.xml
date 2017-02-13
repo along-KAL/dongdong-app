@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/page_v5_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:text="生涯数据统计"/>
+
+    <TextView
+        android:id="@+id/page_v5_titleTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/page_v5_title"
+        android:layout_alignBottom="@id/page_v5_title"
+        android:textColor="@color/font_unhight"
+        android:text="自2016年12月29日开始"/>
+
+    <View
+        android:id="@+id/page_v5_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/page_v5_title"
+        android:background="@color/font_unhight"/>
+
+    <TextView
+        android:id="@+id/page_v5_pace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="@color/font_checked"
+        android:layout_below="@id/page_v5_line"
+        android:layout_margin="6dp"
+        android:text="5,447"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/page_v5_pace"
+        android:layout_alignBottom="@id/page_v5_pace"
+        android:layout_marginBottom="5dp"
+        android:text="步"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page_v5_pace"
+        android:layout_alignLeft="@id/page_v5_pace"
+        android:layout_marginTop="-5dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/page_v5_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="807"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/page_v5_car"
+                android:layout_alignLeft="@id/page_v5_car"
+                android:textSize="15sp"
+                android:text="大卡"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/font_unchecked"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/page_v5_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/page_v5_hour"
+                android:layout_alignLeft="@id/page_v5_hour"
+                android:textSize="15sp"
+                android:text="小时"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/font_unchecked"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/page_v5_kilo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="4.0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/page_v5_kilo"
+                android:layout_alignLeft="@id/page_v5_kilo"
+                android:textSize="15sp"
+                android:text="公里"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

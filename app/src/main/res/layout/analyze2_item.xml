@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/analyze_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/analyze2_table2_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="最新"/>
+
+            <TextView
+                android:id="@+id/analyze_table2_newsNumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_checked"
+                android:layout_below="@id/analyze2_table2_news"
+                android:textSize="35sp"
+                android:text="1043"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/analyze_table2_newsNumb"
+                android:layout_alignBottom="@id/analyze_table2_newsNumb"
+                android:textColor="@color/font_checked"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:text="kg"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="BMI"/>
+
+            <TextView
+                android:id="@+id/analyze_table2_bmiNumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_checked"
+                android:textSize="35sp"
+                android:text="7294"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.example.group.dongdong.widget.customs.PaceTableV2
+        android:id="@+id/analyze2_pageV2_column"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/analyze_layout2"/>
+
+    <ImageView
+        android:id="@+id/analyze_rotation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:layout_below="@id/analyze_layout2"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@mipmap/trend_double_arrow_expand"/>
+
+
+</RelativeLayout>
