@@ -33,7 +33,7 @@ import com.example.group.dongdong.widget.SportsBeginTrainView;
 import com.example.group.dongdong.widget.SportsDiagramView;
 import com.example.group.dongdong.widget.SportsStepCountView;
 import com.example.group.dongdong.widget.SportsTextView;
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 
 import java.util.ArrayList;
 import java.util.List;

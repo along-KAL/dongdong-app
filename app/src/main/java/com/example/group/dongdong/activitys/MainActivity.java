@@ -10,7 +10,7 @@ import com.example.group.dongdong.fragments.AnalyzeFragment;
 import com.example.group.dongdong.fragments.GroupFragment;
 import com.example.group.dongdong.fragments.MyFragment;
 import com.example.group.dongdong.fragments.TargetFragment;
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 
 import butterknife.BindView;
 

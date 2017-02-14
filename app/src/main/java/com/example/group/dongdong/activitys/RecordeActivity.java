@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.alipay.sdk.pay.demo.PayDemoActivity;
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 
 public class RecordeActivity extends AppCompatActivity {
 //    @BindView(R.id.record_recycle)

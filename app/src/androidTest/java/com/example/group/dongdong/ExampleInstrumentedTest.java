@@ -1,4 +1,4 @@
-package com.example.group.teamproject2;
+package com.example.group.dongdong;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

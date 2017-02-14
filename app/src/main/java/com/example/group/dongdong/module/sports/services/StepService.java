@@ -30,7 +30,7 @@ import com.example.group.dongdong.beans.StepData;
 import com.example.group.dongdong.commom.Contants.Constant;
 import com.example.group.dongdong.utils.CountDownTimer;
 import com.example.group.dongdong.utils.DbUtils;
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 
 import java.util.ArrayList;
 import java.util.List;

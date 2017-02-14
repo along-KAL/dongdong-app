@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.View;
 
 import com.example.group.dongdong.commom.BaseFragment;
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 
 /**
  * A simple {@link Fragment} subclass.

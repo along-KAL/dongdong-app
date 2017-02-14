@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.group.teamproject2.com.example.group.dongdong.module.sports.activitys.TrainPlanActivity">
+    tools:context="com.example.group.dongdong.com.example.group.dongdong.module.sports.activitys.TrainPlanActivity">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"

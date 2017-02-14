@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import com.example.group.dongdong.utils.DensityUtils;
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 
 /**
  * Created by Administrator on 2017/1/1.

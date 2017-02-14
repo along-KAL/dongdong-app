@@ -16,7 +16,7 @@ import android.widget.Toast;
 import com.alipay.sdk.app.AuthTask;
 import com.alipay.sdk.app.PayTask;
 import com.alipay.sdk.pay.demo.util.OrderInfoUtil2_0;
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 
 import java.util.Map;
 

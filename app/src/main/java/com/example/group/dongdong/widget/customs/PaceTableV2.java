@@ -12,7 +12,7 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 
 import java.util.ArrayList;
 import java.util.List;

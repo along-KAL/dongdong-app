@@ -17,7 +17,7 @@ import com.example.group.dongdong.widget.customs.CustomIndicator;
 import com.example.group.dongdong.widget.customs.PaceTableV1;
 import com.example.group.dongdong.widget.customs.PaceTableV2;
 import com.example.group.dongdong.widget.customs.PaceTableV3;
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 
 import java.util.ArrayList;
 import java.util.List;

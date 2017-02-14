@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 import com.tencent.tauth.Tencent;
 
 import butterknife.BindView;

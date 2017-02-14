@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 
 import static com.example.group.dongdong.commom.Contants.Constant.MSG_FROM_SERVER;
 

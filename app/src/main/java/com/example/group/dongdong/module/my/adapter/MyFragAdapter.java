@@ -21,7 +21,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.admom.mygreendaotest.DayUserDao;
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 import com.example.group.dongdong.beans.DayUser;
 import com.example.group.dongdong.beans.TotalUser;
 import com.example.group.dongdong.utils.GreenDaoUtils;

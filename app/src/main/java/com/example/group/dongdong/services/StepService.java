@@ -29,7 +29,7 @@ import com.example.group.dongdong.activitys.MainActivity;
 import com.example.group.dongdong.beans.StepData;
 import com.example.group.dongdong.commom.Contants.Constant;
 import com.example.group.dongdong.utils.DbUtils;
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 import com.example.group.dongdong.utils.CountDownTimer;
 
 import java.text.SimpleDateFormat;

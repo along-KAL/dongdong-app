@@ -17,7 +17,7 @@ import com.example.group.dongdong.commom.BaseFragment;
 import com.example.group.dongdong.persenter.MainPersenter;
 import com.example.group.dongdong.ui.view.MainView;
 import com.example.group.dongdong.utils.GreenDaoUtils;
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 
 import java.util.List;
 

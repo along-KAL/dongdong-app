@@ -25,7 +25,7 @@ import com.amap.api.maps.model.LatLng;
 import com.amap.api.maps.model.MyLocationStyle;
 import com.example.group.dongdong.utils.CountDownTimer;
 import com.example.group.dongdong.widget.SportsGPSLayoutView;
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;

@@ -16,7 +16,7 @@ import com.example.group.dongdong.widget.CustomViewPager;
 import com.example.group.dongdong.widget.SportsTrainPlanChoseView;
 import com.example.group.dongdong.widget.SportsTrainPlanCircleView;
 import com.example.group.dongdong.widget.SportsTrainPlanScheduleView;
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 
 import java.util.ArrayList;
 import java.util.List;

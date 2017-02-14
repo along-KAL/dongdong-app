@@ -13,7 +13,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnticipateInterpolator;
 import android.view.animation.ScaleAnimation;
 
-import com.example.group.teamproject2.R;
+import com.example.group.dongdong.R;
 
 /**
  * Created by kongalong on 2017/1/3.

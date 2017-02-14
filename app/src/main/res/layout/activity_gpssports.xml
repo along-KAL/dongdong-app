@@ -5,7 +5,7 @@
     android:id="@+id/activity_gpssports"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.group.teamproject2.com.example.group.dongdong.module.sports.activitys.GPSSportsActivity">
+    tools:context="com.example.group.dongdong.com.example.group.dongdong.module.sports.activitys.GPSSportsActivity">
 
 
 
