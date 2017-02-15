@@ -76,10 +76,9 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
-
-        <activity android:name="com.example.group.dongdong.module.sports.activitys.TrainPlanActivity">
-        </activity>
         <activity android:name="com.example.group.dongdong.module.sports.activitys.GPSSportsActivity">
+        </activity>
+        <activity android:name="com.example.group.dongdong.module.sports.activitys.TrainPlanActivity">
         </activity>
         <activity
             android:name="com.tencent.tauth.AuthActivity"

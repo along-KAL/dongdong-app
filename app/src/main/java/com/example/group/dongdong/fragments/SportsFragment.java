@@ -23,17 +23,17 @@ import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.LinearLayout;
 
-import com.example.group.dongdong.module.sports.adapter.SportsPagerAdapter;
+import com.example.group.dongdong.R;
 import com.example.group.dongdong.commom.BaseFragment;
 import com.example.group.dongdong.commom.Contants.Constant;
 import com.example.group.dongdong.module.sports.activitys.GPSSportsActivity;
 import com.example.group.dongdong.module.sports.activitys.TrainPlanActivity;
+import com.example.group.dongdong.module.sports.adapter.SportsPagerAdapter;
 import com.example.group.dongdong.services.StepService;
 import com.example.group.dongdong.widget.SportsBeginTrainView;
 import com.example.group.dongdong.widget.SportsDiagramView;
 import com.example.group.dongdong.widget.SportsStepCountView;
 import com.example.group.dongdong.widget.SportsTextView;
-import com.example.group.dongdong.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -23,9 +23,9 @@ import com.amap.api.maps.MapView;
 import com.amap.api.maps.model.BitmapDescriptorFactory;
 import com.amap.api.maps.model.LatLng;
 import com.amap.api.maps.model.MyLocationStyle;
+import com.example.group.dongdong.R;
 import com.example.group.dongdong.utils.CountDownTimer;
 import com.example.group.dongdong.widget.SportsGPSLayoutView;
-import com.example.group.dongdong.R;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
@@ -110,7 +110,6 @@ public class GPSSportsActivity extends AppCompatActivity implements LocationSour
      */
     private void setUpMap() {
 
-
         aMap.setLocationSource(this);// 设置定位监听
         aMap.getUiSettings().setMyLocationButtonEnabled(false);// 设置默认定位按钮是否显示
         aMap.setMyLocationEnabled(true);// 设置为true表示显示定位层并可触发定位，false表示隐藏定位层并不可触发定位，默认是false
@@ -154,6 +153,7 @@ public class GPSSportsActivity extends AppCompatActivity implements LocationSour
                     @Override
                     public void onAnimationEnd(Animation animation) {
                         mLinearlayout.setVisibility(View.GONE);
+                        mOutSign = false;
                     }
 
                     @Override
@@ -181,12 +181,12 @@ public class GPSSportsActivity extends AppCompatActivity implements LocationSour
         mSportsGPSLayoutView.setOnOutListener(new SportsGPSLayoutView.OnOutListener() {
             @Override
             public void onOut() {
-
-              /*  mLinearlayout.setVisibility(View.VISIBLE);
+                mOutSign = true;
+                mLinearlayout.setVisibility(View.VISIBLE);
                 AlphaAnimation alphaAnimation = new AlphaAnimation(0.0f,1.0f);
-                alphaAnimation.setDuration(3000);
+                alphaAnimation.setDuration(300);
                 alphaAnimation.setFillAfter(true);
-                mLinearlayout.startAnimation(alphaAnimation);*/
+                mLinearlayout.startAnimation(alphaAnimation);
             }
         });
 
@@ -255,13 +255,13 @@ public class GPSSportsActivity extends AppCompatActivity implements LocationSour
                     mStartLong = amapLocation.getLongitude();
                     mStartSign = false;
                 }
-
-                mDistance = AMapUtils.calculateLineDistance(new LatLng(mStartLat, mStartLong)
-                        , new LatLng(amapLocation.getLatitude(), amapLocation.getLongitude()))/1000;
-                //设置距离
-                DecimalFormat df=new DecimalFormat("#.##");
-                mDistanceText.setText(String.valueOf(df.format(mDistance)));
-
+                if(!mOutSign) {
+                    mDistance = AMapUtils.calculateLineDistance(new LatLng(mStartLat, mStartLong)
+                            , new LatLng(amapLocation.getLatitude(), amapLocation.getLongitude())) / 1000;
+                    //设置距离
+                    DecimalFormat df = new DecimalFormat("#.##");
+                    mDistanceText.setText(String.valueOf(df.format(mDistance)));
+                }
             } else {
                 String errText = "定位失败," + amapLocation.getErrorCode()+ ": " + amapLocation.getErrorInfo();
                 Log.e("AmapErr",errText);
@@ -307,7 +307,7 @@ public class GPSSportsActivity extends AppCompatActivity implements LocationSour
 
 
 
-
+    private boolean mOutSign = false;
 
     class MyTimer extends CountDownTimer {
         /**
@@ -325,12 +325,17 @@ public class GPSSportsActivity extends AppCompatActivity implements LocationSour
         @Override
         public void onTick(long millisUntilFinished) {
 
-            //格式化时间
-            SimpleDateFormat format1=new SimpleDateFormat("HH:mm:ss");
-            Date d1=new Date(currentTime+=1000);
-            mTimeText.setText(format1.format(d1));
 
-            mSpeedText.setText(String.valueOf(mDistance/currentTime/60));
+
+            if(!mOutSign){
+                //格式化时间
+                SimpleDateFormat format1=new SimpleDateFormat("HH:mm:ss");
+                Date d1=new Date(currentTime+=1000);
+                mTimeText.setText(format1.format(d1));
+
+                mSpeedText.setText(String.valueOf(mDistance/currentTime/60));
+            }
+
 
         }
 
